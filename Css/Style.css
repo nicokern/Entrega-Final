@@ -1,0 +1,283 @@
+
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #004D73;
+}
+
+main{
+    font: 1em;
+    background-color: #1c79c0;
+
+}
+
+footer{
+    color: aliceblue;
+    background-color:#004D73;
+    text-align: center;
+}
+
+
+h1{
+    font-family: "rethink sans";
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    ;
+}
+
+h2{
+    font-family: "rethink sans";
+    font-style: bold;
+    font-size: 2em;
+
+}
+
+h3{
+    font-family: "rethink sans";
+    font-style:initial;
+    color:aliceblue;
+
+}
+
+p{
+    font-family: "rethink sans";
+    font-style:normal;
+
+}
+
+
+header{
+    color: rgb(255, 255, 255);
+    background-color: #004d73;
+    font: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.LogoNombre{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.NAVEGACIÓN ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+    height: 75px;
+    background-color:#dbebfa ;
+    ;
+
+}
+
+#Logo{
+    height: 75px;
+    width: auto;
+
+}
+
+@media ((max-width: 600px)){
+
+    .NAVEGACIÓN ul{
+        background-color: tomato;
+    }
+
+}
+
+#Hero{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+
+}
+
+.img-bannerhero{
+    height: 300px;
+   max-width: auto;
+}
+
+
+.BotoneraCategorias
+{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+
+#BotonesCategorias
+{
+background-color: #ffffff;
+display: flex;
+justify-content: center;
+gap: 200px;
+
+}
+
+@media ((max-width: 600px)){
+
+    .BotoneraCategorias{
+       display: none;
+    }
+}
+
+.TestimoniosCuerpo {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px ;
+    margin: 10px 0px 10px 0px;
+ 
+ }
+
+/*
+.TestimoniosCuerpo {
+    
+    display: grid ;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 20px ;
+    margin: 10px 0px 10px 0px;
+ 
+ }
+*/
+
+
+.Testimonios {
+    
+   display: flex ;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+   background-color: #dbebfa ;
+
+}
+
+.Testimonio{
+
+    background-color:#dbebfa
+}
+.Testimonio h3{
+
+    color: #004D73;
+   
+}
+
+.img-testimonio{
+    height: 200px;
+    width: auto;
+  
+}
+
+@media ((max-width: 600px)) {
+
+    .Testimonios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+    }
+ 
+
+
+
+.redes {
+    height: 50px;
+    text-align: center ;
+    justify-content: center;
+    align-items: center;
+    background-color: #004D73;
+}
+
+/* Nuestros Servicios*/
+
+
+.Servicios{
+display: grid;
+grid-template-columns: 1;
+grid-template-rows: 3;
+padding: 20px;
+gap: 20px;
+
+
+}
+
+.ListadoServicios {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ListadoServicios{
+    list-style: none;
+}
+
+.tarjetaServicio{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgServicio{
+    height: 100px;
+    width: 100px;
+}
+
+.servicioDetalle{
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media ((max-width: 600px)) {
+
+    .ListadoServicios {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        }
+
+    .tarjetaServicio{
+        flex-direction: row ;
+        flex-wrap: wrap;
+        
+    }
+
+    
+     
+    }
+
+.EntradaPrincipal{
+    background-color: #dbebfa;
+
+}
+
+.EntradasAntiguas{
+
+    background-color: #007fbd;   
+}
