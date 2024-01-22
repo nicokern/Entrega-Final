@@ -272,12 +272,278 @@ gap: 20px;
      
     }
 
-.EntradaPrincipal{
-    background-color: #dbebfa;
+.tituloSeccion{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 120px;
+        justify-content: center;
+    
+    }
+
+    /* Blog*/
+
+
+
+
+.blogEntradas{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
 
 }
 
-.EntradasAntiguas{
+.entradaPrincipal{
+    background-color: #dbebfa;
+    width: auto;
+    align-items: center;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto ;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 
-    background-color: #007fbd;   
+.entradaPrincipal H2{
+    grid-column: 1;
+    color: #006391;
+    margin: 0px 25px 0px 50px;
+
+}
+
+.entradaPrincipal p{
+    grid-column: 1;
+    color: rgb(0, 53, 79);
+    padding: 50px;
+}
+
+.entradaPrincipal img {
+    grid-column: 2;
+    width: 400px;
+    padding: 10px;
+    
+
+}
+
+.entradasAntiguas{
+
+    background-color: #006391;   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px ;
+    gap: 10px ;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.entradaBlog{
+    padding: 10px;
+    gap:10px ;
+    margin: 10px ;
+    background-color: aliceblue;
+ }
+ 
+ .imgEntradaAntigua{
+     width: 300px;
+     height: auto ;
+     object-fit: cover ;
+ }
+
+@media ((max-width: 600px)){
+
+        .entradasAntiguas{
+
+            display: flex;
+            flex-direction:column ;
+
+        }
+
+        .entradaPrincipal{
+           display: flex;
+           flex-direction: column;
+
+        }
+
+        .entradaPrincipal p{
+            order: 3;
+        }
+
+        .entradaPrincipal img{
+
+            order: 2;
+        }
+     
+}
+
+@media ((max-width: 1024px)){
+
+   
+    .entradasAntiguas{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px ;
+        gap: 10px ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .entradaBlog{
+        padding: 10px;
+        gap:10px ;
+        margin: 10px ;
+        background-color: aliceblue;
+     }
+     
+     
+     .entradaBlog{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "titulo "
+        "parrafo"
+        "imagen";
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+         }
+     
+         .entradaBlog H2{
+            grid-area: titulo;
+         }
+ 
+         .entradaBlog p {
+            grid-area: parrafo;
+            
+         }
+
+         .imgEntradaAntigua{
+            width: 300px;
+            height: auto ;
+            object-fit: cover ;
+            grid-area: imagen;
+           }
+           
+           .tituloSimple{
+            text-align: center;
+        }
+        
+}
+
+/* Servicios */
+
+.ListadoServicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: #004D73;
+    background-color: #dbebfa;
+    padding:20px ;
+}
+
+.tarjetaServicio{
+    display: flex ;
+    flex-direction: row;
+    gap: 25px;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+@media ((max-width: 600px)){
+
+    .tarjetaServicio{
+
+        flex-direction: column;
+    }
+
+}
+
+/* Contacto */
+
+
+.contactoGrilla{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 100px;
+    padding: 20px;
+
+}
+
+.datosContacto{
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+}
+
+.datosContacto div iframe {
+
+    width: 50%;
+    height: 100%;
+
+}
+
+
+@media ((max-width: 600px)){
+
+
+    .tituloSimple{
+        text-align: center;
+    }
+
+    .contactoGrilla{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center
+    }
+
+}
+
+/* Nosotros */
+
+
+.nosotrosSeccion{
+
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    gap: 150px;
+    padding: 25px;
+    height: auto;
+    background-color: #497abb;
+
+}
+
+.nosotrosHistoria{
+
+    height: 300px;
+    
+}
+
+.nosotrosSeccion iframe{
+
+    height: 100%;
+    width: 100%;
+
+  
 }
