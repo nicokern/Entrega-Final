@@ -68,23 +68,15 @@ header{
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    justify-content: space-around;
+
 
 }
 
 
-.NAVEGACIÓN ul{
+header div nav div div ul li .hover-color:hover {
 
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 20px;
-    align-items: center;
-    height: 75px;
-    background-color:#dbebfa ;
-    ;
-
+    background-color: #dbebfa;
 }
 
 #Logo{
@@ -119,17 +111,18 @@ header{
 .BotoneraCategorias
 {
     background-color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    display:flex;
+    flex-direction: column;
+    
 }
 
 #BotonesCategorias
 {
 background-color: #ffffff;
 display: flex;
-justify-content: center;
-gap: 200px;
+flex-direction: row;
+justify-content: space-around;
+gap: auto;
 
 }
 
