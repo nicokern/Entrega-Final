@@ -59,6 +59,7 @@
         <h1 class="tituloSimple"> Contacto</h1
             >
        <section class="contactoGrilla">
+        
         <div class="datosContacto">
             <Div>
                 <h2> Datos de contacto </h2>
@@ -73,19 +74,40 @@
         </div>
 
         <Div class="formularioContacto">
-            <h2> Escribinos </h2>
-            
-            <form action="/Img/Bonos.png"> Nombre</form>
-            <ul>
-                
-            <li> Nombre</li>
-            <li> Mail </li>
-            <Li> Telefono</Li>
-            <li> Escribinos</li>
-            <!-- acá iría un formulario pero aún no sé como 
-            hacerlo-->
+            <h2> Escribinos</h2>
+            <p> Consultanos por una asesoría privada para tu empresa</p>
+            <form class="row g-3">
+              <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-12">
+                <label for="inputPassword4" class="form-label">Telefono</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+        
+              <div class="col-md-12">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
 
-            </ul>
+              <div class="col-md-12">
+                <label for="inputCity" class="form-label">Contacto Comercial</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+        
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Sumarme al newsletter
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn botonenviar-bg">Enviar</button>
+              </div>
+            </form>
         </Div>
 
     </section>

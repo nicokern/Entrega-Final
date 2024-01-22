@@ -27,7 +27,7 @@ h1{
     font-family: "rethink sans";
     color: rgb(255, 255, 255);
     font-size: 3em;
-    ;
+    margin-left: 20px;
 }
 
 h2{
@@ -455,13 +455,23 @@ gap: 20px;
 
 /* Contacto */
 
+.datosContacto{
+    
+    padding: 0px 0px 100px 10px;
+
+}
+
+.formularioContacto{
+    padding-right: 10px ;
+}
 
 .contactoGrilla{
 
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 100px;
+    gap: 10px;
     padding: 20px;
+    justify-content: space-around;
 
 }
 
@@ -471,6 +481,13 @@ gap: 20px;
     flex-direction: column;
     gap:40px;
     justify-content: center;
+}
+
+.botonenviar-bg{
+    background-color: #008cd3 ;
+    color: white;
+ 
+
 }
 
 .datosContacto div iframe {
@@ -486,6 +503,7 @@ gap: 20px;
 
     .tituloSimple{
         text-align: center;
+        margin-left: 100px; 
     }
 
     .contactoGrilla{
