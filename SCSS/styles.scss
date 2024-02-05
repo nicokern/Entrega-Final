@@ -1,19 +1,7 @@
-*{
-    margin:0 ;
-    padding:0 ;
-    box-sizing: border-box;
-}
-
-/* Variables */
-
-/* 
-    - Locales: están dentro de un selector, 
-    aplican solo a un bloque
-    - Globales: NO están dedntro de un selector, son 
- para todos, se definen al comienzo  */
-
-$titlefont:normal ;
-$coolblue: #004D73 ;
+ 
+@import "utilidades/reset";
+@import "utilidades/variables";
+@import "html/home";
 
 
 body{

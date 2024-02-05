@@ -1,0 +1,40 @@
+@import "...utilidades/variables";
+
+body{
+
+    background-color: $background-body;
+}
+
+main{
+    font: 1em;
+    background-color: #1c79c0;
+
+}
+
+footer{
+    color: aliceblue;
+    background-color:#004D73;
+    text-align: center;
+}
+
+
+h1{
+    font-family: "rethink sans";
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    margin-left: 20px;
+}
+
+h2{
+    font-family: "rethink sans";
+    font-style: bold;
+    font-size: 2em;
+
+}
+
+h3{
+    font-family: "rethink sans";
+    font-style:initial;
+    color:aliceblue;
+
+}
