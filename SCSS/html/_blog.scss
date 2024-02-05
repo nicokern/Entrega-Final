@@ -1,0 +1,134 @@
+    /* Blog*/
+
+    .blogEntradas{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    
+    }
+    
+    .entradaPrincipal{
+        background-color: #dbebfa;
+        width: auto;
+        align-items: center;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: auto auto ;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .entradaPrincipal H2{
+        grid-column: 1;
+        color: #006391;
+        margin: 0px 25px 0px 50px;
+    
+    }
+    
+    .entradaPrincipal p{
+        grid-column: 1;
+        color: rgb(0, 53, 79);
+        padding: 50px;
+    }
+    
+    .entradaPrincipal img {
+        grid-column: 2;
+        width: 400px;
+        padding: 10px;
+        
+    
+    }
+    
+    .entradasAntiguas{
+    
+        background-color: #006391;   
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 20px ;
+        gap: 10px ;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    
+    
+    .entradaBlog{
+        padding: 10px;
+        gap:10px ;
+        margin: 10px ;
+        background-color: aliceblue;
+     }
+     
+     .imgEntradaAntigua{
+         width: 300px;
+         height: auto ;
+         object-fit: cover ;
+     }
+    
+
+    
+    @media ((max-width: 1024px)){
+    
+       
+        .entradasAntiguas{
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px ;
+            gap: 10px ;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        
+        .entradaBlog{
+            padding: 10px;
+            gap:10px ;
+            margin: 10px ;
+            background-color: aliceblue;
+         }
+         
+         
+         .entradaBlog{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "titulo "
+            "parrafo"
+            "imagen";
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+    
+             }
+         
+             .entradaBlog H2{
+                grid-area: titulo;
+             }
+     
+             .entradaBlog p {
+                grid-area: parrafo;
+                
+             }
+    
+             .imgEntradaAntigua{
+                width: 300px;
+                height: auto ;
+                object-fit: cover ;
+                grid-area: imagen;
+               }
+    
+               .tituloSimple{
+                text-align: center;
+            }
+            
+    }
+    

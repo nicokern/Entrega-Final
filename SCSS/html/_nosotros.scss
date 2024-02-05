@@ -1,0 +1,29 @@
+/* Nosotros */
+
+
+.nosotrosSeccion{
+
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    gap: 150px;
+    padding: 25px;
+    height: auto;
+    background-color: #497abb;
+
+}
+
+.nosotrosHistoria{
+
+    height: 300px;
+    
+}
+
+.nosotrosSeccion iframe{
+
+    height: 100%;
+    width: 100%;
+
+  
+}

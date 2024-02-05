@@ -1,4 +1,17 @@
 /* Variables */
 
 
-$background-body: #004D73 ;
+$colors: #004D73 , #76ff6f , #ffffff, #000000, #c5c5c5, #479ba8;
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($f-family, $f-style, $f-size, $f-color) {
+
+    font-family: $f-family;
+    font-style: $f-style;
+    font-size: $f-size;
+    color: $f-color;
+}

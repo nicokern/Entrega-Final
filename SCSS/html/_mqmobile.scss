@@ -1,0 +1,73 @@
+@media ((max-width: 600px)) {
+
+ /* Home */
+    .BotoneraCategorias{
+        display: none;
+     }
+
+     .Testimonios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .NAVEGACIÓN ul{
+        background-color: tomato;
+    }
+    
+
+/* Contacto */
+
+.tituloSimple{
+    text-align: center;
+    margin-left: 100px; 
+}
+
+.contactoGrilla{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+
+}
+/* Blog */
+
+.entradasAntiguas{
+    
+    display: flex;
+    flex-direction:column ;
+
+}
+
+.entradaPrincipal{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.entradaPrincipal p{
+    order: 3;
+}
+
+.entradaPrincipal img{
+
+    order: 2;
+}
+
+/* Nuestros Servicios */
+
+.ListadoServicios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+.tarjetaServicio{
+   flex-direction: row ;
+   flex-wrap: wrap;
+   
+}
+
+}

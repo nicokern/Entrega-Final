@@ -1,0 +1,70 @@
+/* Nuestros Servicios*/
+
+
+.Servicios{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    padding: 20px;
+    gap: 20px;
+    
+    
+    }
+    
+    .ListadoServicios {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .ListadoServicios{
+        list-style: none;
+    }
+    
+    .tarjetaServicio{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .imgServicio{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .servicioDetalle{
+    
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .tituloSeccion{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            height: 120px;
+            justify-content: center;
+        
+        }
+
+
+/* Servicios */
+
+.ListadoServicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: #004D73;
+    background-color: #dbebfa;
+    padding:20px ;
+}
+
+.tarjetaServicio{
+    display: flex ;
+    flex-direction: row;
+    gap: 25px;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,40 +1,245 @@
-@import "...utilidades/variables";
+/* HOME */
+
+@import "../utilidades/variables";
 
 body{
 
-    background-color: $background-body;
-}
-
-main{
-    font: 1em;
-    background-color: #1c79c0;
-
-}
-
-footer{
-    color: aliceblue;
-    background-color:#004D73;
-    text-align: center;
+    background-color: nth($colors , 3 ) ;
 }
 
 
 h1{
-    font-family: "rethink sans";
-    color: rgb(255, 255, 255);
-    font-size: 3em;
+   @include font ("rethink sans", "initial", 3em, nth($colors,1));
     margin-left: 20px;
 }
 
 h2{
-    font-family: "rethink sans";
-    font-style: bold;
-    font-size: 2em;
-
+    @include font ("rethink sans", "regular", 2em,nth($colors,1));
+    text-align: justify;
+    text-align-last: center;
 }
 
 h3{
-    font-family: "rethink sans";
-    font-style:initial;
-    color:aliceblue;
+    @include font ("rethink sans", "initial", 1em,rgb(255, 255, 255))
+}
+
+
+main{
+    font: 1em;
+    background-color:nth ($colors, 1);
+    color: aliceblue
+    
+}
+
+body{
+    background-color:nth ($colors, 1);
+}
+
+
+p{
+    @include font ("rethink sans", "normal", 1em,nth($colors,1));
 
 }
+ 
+
+header{
+    color: rgb(180, 12, 12);
+    background-color: nth($colors,3);
+    font: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.LogoNombre{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+
+
+}
+
+
+header{
+    div{
+        nav{
+            div{
+                div{
+                    ul{
+                        li{
+                            .hover-color:hover {
+
+                                background-color: #dbebfa;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+} 
+    
+
+#Logo{
+    height: 75px;
+    width: auto;
+}
+
+
+#Hero {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+    background: linear-gradient(to bottom,nth($colors,3),nth($colors,1), nth($colors,3));
+
+    h2{
+    
+
+    }
+    p{
+        margin-left: 20px ;
+        text-align: justify;
+        text-align-last:center;
+    }
+
+}   
+
+.img-bannerhero{
+    height: auto;
+    max-width: auto;
+    margin:20px
+}
+
+
+
+.BotoneraCategorias
+{
+    position: relative;
+    background-color: nth($colors, 3);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 32px;    
+    
+}
+
+#BotonesCategorias
+{
+background-color: #ffffff;
+padding: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+gap: auto;
+border-radius: 100px;
+
+}
+
+@keyframes agrandar_boton{
+
+    0% {transform: scale(1);}
+    50%{transform: scale(1.25);}
+    100%{transform: scale(1.5);}
+}
+#botonCategoria{
+    
+border-radius: 32px;
+
+:hover{
+    animation: agrandar_boton;
+    animation-duration: 3s;
+
+}
+
+}
+
+/*Testimonios*/
+
+.TestimoniosCuerpo {
+    
+    display: flex;
+    gap: 20px ;
+    padding: 10px 10px 10px 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    background: linear-gradient(to top, nth($colors,1), nth($colors,3));
+    border: 4px;
+    border-image: radial-gradient(circle, nth($colors, 3), nth($colors, 2)) 1;
+    border-image-slice: 1;
+
+
+    h2{
+        color: nth($colors,1);
+    }
+   
+ }
+
+
+.Testimonios {
+    
+   display: flex ;
+   gap: 20px;
+   margin-left: 0px;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: #ffffff;
+
+}
+
+.Testimonio{
+
+    
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color:nth($colors,3);
+    border-radius: 32px;
+
+ h3{
+    font-size: 1.5em;
+    color: nth($colors,1);
+    margin: 10px 10px 10px 10px;
+   
+}
+
+p{
+    color: nth($colors,1);
+}
+ }
+
+.img-testimonio{
+   @include sizes (auto,auto)
+  
+}
+
+.redes {
+    height: 50px;
+    width: 100%;
+    text-align: center ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 10px;
+    background: linear-gradient(to bottom,nth($colors,1),nth($colors,1));
+}
+
+
+footer{
+
+    text-align: center;
+    width: 100%;
+    background-color: nth($colors,1);
+
+    p{
+        color:nth($colors,3);
+    }
+ }

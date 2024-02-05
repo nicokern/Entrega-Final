@@ -1,0 +1,43 @@
+/* Contacto */
+
+.datosContacto{
+    
+    padding: 0px 0px 100px 10px;
+
+}
+
+.formularioContacto{
+    padding-right: 10px ;
+}
+
+.contactoGrilla{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+
+.datosContacto{
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+}
+
+.botonenviar-bg{
+    background-color: #008cd3 ;
+    color: white;
+ 
+
+}
+
+.datosContacto div iframe {
+
+    width: 50%;
+    height: 100%;
+
+}
