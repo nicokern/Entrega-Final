@@ -43,8 +43,7 @@ p{
  
 
 header{
-    color: rgb(180, 12, 12);
-    background-color: nth($colors,3);
+    background-color: nth($colors,2);
     font: 1em;
     display: flex;
     flex-direction: row;
@@ -94,13 +93,16 @@ header{
 #Hero {
    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 10px 10px 20px 10px;
     background: linear-gradient(to bottom,nth($colors,3),nth($colors,1), nth($colors,3));
 
-    h2{
-    
+    div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
 
     }
     p{
@@ -112,8 +114,7 @@ header{
 }   
 
 .img-bannerhero{
-    height: auto;
-    max-width: auto;
+
     margin:20px
 }
 

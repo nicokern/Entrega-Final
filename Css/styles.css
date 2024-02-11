@@ -84,10 +84,16 @@ header div nav div div ul li .hover-color:hover {
 
 #Hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding: 10px 10px 20px 10px;
   background: linear-gradient(to bottom, #ffffff, #004D73, #ffffff);
+}
+#Hero div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 #Hero p {
   margin-left: 20px;
@@ -96,8 +102,6 @@ header div nav div div ul li .hover-color:hover {
 }
 
 .img-bannerhero {
-  height: auto;
-  max-width: auto;
   margin: 20px;
 }
 
