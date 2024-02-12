@@ -1,5 +1,6 @@
 /* Nuestros Servicios*/
 
+@import url(/SCSS/html/_home.scss);
 
 .Servicios{
     display: grid;
@@ -55,7 +56,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     border: #004D73;
-    background-color: #dbebfa;
+   
     padding:20px ;
 }
 

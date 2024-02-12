@@ -4,13 +4,13 @@
 
 body{
 
-    background-color: nth($colors , 3 ) ;
+    background-color: nth($colors ,3 ) ;
 }
 
 
 h1{
    @include font ("rethink sans", "initial", 3em, nth($colors,1));
-    margin-left: 20px;
+    
 }
 
 h2{
@@ -41,31 +41,44 @@ p{
 
 }
  
-
-header{
-    background-color: nth($colors,2);
-    font: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-
-.LogoNombre{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-around;
-
-
+main{
+    gap:100px;
 }
 
 
+
+
 header{
+    background-color: nth($colors,3);
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 200;
+    
     div{
+       width: 100%;
+       margin-left: 20px;
+     
+        .LogoNombre{
+            
+            width: 20%;
+            align-items: center;
+            
+        }
+
+        .navbarbotones{
+
+            display: flex;
+            align-items: center;
+            width: 70%;
+            
+
+        }
+
         nav{
             div{
                 div{
@@ -94,24 +107,79 @@ header{
    
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    padding: 10px 10px 20px 10px;
-    background: linear-gradient(to bottom,nth($colors,3),nth($colors,1), nth($colors,3));
+    padding: 10px 10px 10px 10px;
+    background: nth($colors,3);
+    height: auto;
+    margin: 10px 0px 100px 0px;
+   
+  
+    
+  
+  .portada{
+    width: 40%;
+    
+        img{
+            
+            width: 100%;
+            height: auto;
+            margin-right: 100px;
+            }
 
-    div{
+            }
+
+    div{ 
+       
+        margin-left: 100px;
+        width: 60%;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        
 
-    }
+     
+     h1{
+        font-size: 5em;
+        text-align: left;
+        max-width: 70%;
+         
+        }
     p{
-        margin-left: 20px ;
-        text-align: justify;
-        text-align-last:center;
-    }
+        width: 100%;
+        text-align: center;
+        max-width: 60%;
+        
+        
+        }
 
-}   
+    a{
+        display:flex;
+        justify-content: center;
+        width: 200px; 
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 32px;
+        border: 1px solid nth($colors,1);
+        background-color:nth($colors,3);
+        color:nth($colors,1);
+        
+
+
+            &:hover{
+                border: 1px solid nth($colors,3);
+                background-color:nth($colors,1);
+                color:nth($colors,3);
+            }
+
+    }
+    }
+ 
+         
+        }
+    
+ 
 
 .img-bannerhero{
 
@@ -187,7 +255,7 @@ border-radius: 32px;
 .Testimonios {
     
    display: flex ;
-   gap: 20px;
+   gap: 40px;
    margin-left: 0px;
    flex-direction: row;
    justify-content: space-between;
@@ -204,17 +272,21 @@ border-radius: 32px;
     padding: 10px;
     background-color:nth($colors,3);
     border-radius: 32px;
+    margin: 20px;
+    padding: 10px;
+    height: 450px;
 
- h3{
-    font-size: 1.5em;
-    color: nth($colors,1);
-    margin: 10px 10px 10px 10px;
-   
-}
+        h3{
+            font-size: 1.5em;
+            color: nth($colors,1);
+            margin: 10px 10px 10px 10px;
+        
+        }
 
-p{
-    color: nth($colors,1);
-}
+        p{
+            color: nth($colors,1);
+            align-items: center;
+        }
  }
 
 .img-testimonio{

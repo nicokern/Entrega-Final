@@ -1,4 +1,5 @@
 /*Utilidades*/
+@import url(/SCSS/html/_home.scss);
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,6 @@ h1 {
   font-style: "initial";
   font-size: 3em;
   color: #004D73;
-  margin-left: 20px;
 }
 
 h2 {
@@ -39,12 +39,12 @@ h3 {
 
 main {
   font: 1em;
-  background-color: nth #004D73, #76ff6f, #ffffff, #000000, #c5c5c5, #479ba8, 1;
+  background-color: nth #004D73, #73b738, #ffffff, #000000, #c5c5c5, #479ba8, 1;
   color: aliceblue;
 }
 
 body {
-  background-color: nth #004D73, #76ff6f, #ffffff, #000000, #c5c5c5, #479ba8, 1;
+  background-color: nth #004D73, #73b738, #ffffff, #000000, #c5c5c5, #479ba8, 1;
 }
 
 p {
@@ -54,25 +54,34 @@ p {
   color: #004D73;
 }
 
+main {
+  gap: 100px;
+}
+
 header {
-  color: rgb(180, 12, 12);
   background-color: #ffffff;
-  font: 1em;
   display: flex;
+  width: auto;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
-
-.LogoNombre {
+header div {
+  width: 100%;
+  margin-left: 20px;
+}
+header div .LogoNombre {
+  width: 20%;
+  align-items: center;
+}
+header div .navbarbotones {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  justify-content: space-around;
+  width: 70%;
 }
-
 header div nav div div ul li .hover-color:hover {
   background-color: #dbebfa;
 }
@@ -85,20 +94,54 @@ header div nav div div ul li .hover-color:hover {
 #Hero {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  padding: 10px 10px 20px 10px;
-  background: linear-gradient(to bottom, #ffffff, #004D73, #ffffff);
+  padding: 10px 10px 10px 10px;
+  background: #ffffff;
+  height: auto;
+  margin: 10px 0px 100px 0px;
+}
+#Hero .portada {
+  width: 40%;
+}
+#Hero .portada img {
+  width: 100%;
+  height: auto;
+  margin-right: 100px;
 }
 #Hero div {
+  margin-left: 100px;
+  width: 60%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
 }
-#Hero p {
-  margin-left: 20px;
-  text-align: justify;
-  text-align-last: center;
+#Hero div h1 {
+  font-size: 5em;
+  text-align: left;
+  max-width: 70%;
+}
+#Hero div p {
+  width: 100%;
+  text-align: center;
+  max-width: 60%;
+}
+#Hero div a {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 32px;
+  border: 1px solid #004D73;
+  background-color: #ffffff;
+  color: #004D73;
+}
+#Hero div a:hover {
+  border: 1px solid #ffffff;
+  background-color: #004D73;
+  color: #ffffff;
 }
 
 .img-bannerhero {
@@ -153,7 +196,7 @@ header div nav div div ul li .hover-color:hover {
   margin: 0px 0px 0px 0px;
   background: linear-gradient(to top, #004D73, #ffffff);
   border: 4px;
-  border-image: radial-gradient(circle, #ffffff, #76ff6f) 1;
+  border-image: radial-gradient(circle, #ffffff, #73b738) 1;
   border-image-slice: 1;
 }
 .TestimoniosCuerpo h2 {
@@ -162,7 +205,7 @@ header div nav div div ul li .hover-color:hover {
 
 .Testimonios {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   margin-left: 0px;
   flex-direction: row;
   justify-content: space-between;
@@ -176,6 +219,9 @@ header div nav div div ul li .hover-color:hover {
   padding: 10px;
   background-color: #ffffff;
   border-radius: 32px;
+  margin: 20px;
+  padding: 10px;
+  height: 450px;
 }
 .Testimonio h3 {
   font-size: 1.5em;
@@ -184,6 +230,7 @@ header div nav div div ul li .hover-color:hover {
 }
 .Testimonio p {
   color: #004D73;
+  align-items: center;
 }
 
 .img-testimonio {
@@ -417,7 +464,6 @@ footer p {
   flex-direction: row;
   flex-wrap: wrap;
   border: #004D73;
-  background-color: #dbebfa;
   padding: 20px;
 }
 
