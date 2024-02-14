@@ -1,43 +1,92 @@
 /* Contacto */
 
-.datosContacto{
-    
-    padding: 0px 0px 100px 10px;
-
+h1{
+    margin-left: 20px;
 }
 
-.formularioContacto{
-    padding-right: 10px ;
-}
 
 .contactoGrilla{
 
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10px;
-    padding: 20px;
+    grid-template-rows: 35% 65%;
+    margin:5vh 15vw 30vh 15vw;
+    gap: 25vh;
+    height: 90vh;
+    padding: 0px;
     justify-content: space-around;
+   
+    .datosContactoppal{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 50vh;
+        box-shadow: 5px 5px 15px rgb(161, 178, 204);
 
-}
+        .datosContacto{
+    
+            display: flex;
+            flex-direction: row;
+            gap:4vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+           
+    
+                div
+                {
+                    iframe{
+                        width: auto;
+                        height: auto;
+                    }
+    
+                    img {
+    
+                    width: 35vw;
+                    height: auto;
+    
+                            }
+    
+                }
+        
+        }
+    
 
-.datosContacto{
+    
+    }
 
-    display: flex;
-    flex-direction: column;
-    gap:40px;
-    justify-content: center;
+    
+    .formularioContacto{
+        padding-right: 0px;
+        text-align: center;
+        background-color: nth($colors,6);
+        border-radius: 64px;
+        height: 100%;
+        padding: 0px 40px 10px 40px;
+
+        label{
+            color: nth($colors,3);
+            opacity: 70%;
+            text-align: left;
+        
+        }
+        
+        h2{
+            margin-top:2vh;
+            color: nth($colors,3);
+        }
+
+        p{
+            color: nth($colors,3);
+        }
+        
+    }
+    
+
 }
 
 .botonenviar-bg{
     background-color: #008cd3 ;
     color: white;
- 
-
-}
-
-.datosContacto div iframe {
-
-    width: 50%;
-    height: 100%;
 
 }

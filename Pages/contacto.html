@@ -15,66 +15,73 @@
 </head>
 <body>
     
-    <header>
-        <div class="LogoNombre">
-          <a href="../index.html"> <img id="Logo" src="../Img/Logo.png" alt="logo"></a>
-        </div>
-        
-           
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/ nuestros-servicios.html">Nuestros Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Pages/nosotros.html">Nosotros</a>
-                  </li>
-              
-                </ul>
-                
-              </div>
-            </div>
-        </nav>
+  <header class="container-fluid"> 
+    <div class="row">
 
-    </header>
+        <div class="col-4 d-flex align-items-center justify-content-start LogoNombre">
+            <a href="../index.html"><img id="Logo" src="../Img/Logo.png" alt="logo"></a>
+        </div>
+
+        <div class="col-8 d-flex align-items-center justify-content-end navbarbotones"> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container"> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link active hover-color" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hover-color" href="../Pages/ nuestros-servicios.html">Nuestros Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hover-color" href="../Pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hover-color" href="../Pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hover-color" href="../Pages/nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+</header>
 
     <Main>
        
-        <h1 class="tituloSimple"> Contacto</h1
-            >
+        <h1 class="tituloSimple"> Contacto</h1>
+
        <section class="contactoGrilla">
         
-        <div class="datosContacto">
-            <Div>
-                <h2> Datos de contacto </h2>
-                <p> Telefono 11678923423</p>
-                <p> mail: asdasd@gmail.com</p>
-                <p> Dirección: Calle falsa 123</p>
-            </Div>
-    
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.349960815314!2d-58.57892884597497!3d-34.612537018838516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7495c12317d%3A0x8cea287955f0596b!2sPepe!5e0!3m2!1ses-419!2sar!4v1701892107856!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="datosContactoppal">
+            <h2> Datos de contacto</h2>
+            <div class="datosContacto">
+                <Div>
+                    <p> <b>Telefono</b> 11678923423</p>
+                    <p> <b>Mail:</b> InvestCo@gmail.com</p>
+                    <p> <b>Dirección:</b> Av. Mayo 23499</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.349960815314!2d-58.57892884597497!3d-34.612537018838516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7495c12317d%3A0x8cea287955f0596b!2sPepe!5e0!3m2!1ses-419!2sar!4v1701892107856!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </Div>
+        
+                <div class="imgContacto">
+                <img src="/Img/contacto.png" alt="">
+                </div>
             </div>
         </div>
 
         <Div class="formularioContacto">
+            
             <h2> Escribinos</h2>
             <p> Consultanos por una asesoría privada para tu empresa</p>
+           
             <form class="row g-3">
               <div class="col-md-12">
                 <label for="inputEmail4" class="form-label">Email</label>

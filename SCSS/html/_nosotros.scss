@@ -2,15 +2,15 @@
 
 h3{
     color: nth($colors,1);
-    margin: 20px;
+    margin-left: 5vw;
 }
 .nosotrosSeccion{
 
     display: flex;
     flex-direction: column;
     width: 75%;
-    margin: 100px;
-    gap: 150px;
+    margin: 5vh 10vw 10vh 10vw;
+    gap: 5vh;
     padding: 25px;
     height: auto;
     border: solid 0px nth($colors,2);
@@ -22,6 +22,16 @@ h3{
         h3{
             color: nth($colors,1);
             font-size: 1.5em;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            border-top-right-radius: 64px;
+            border-bottom-left-radius: 64px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
         }
         
     }
