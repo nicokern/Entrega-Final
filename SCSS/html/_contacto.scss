@@ -20,7 +20,9 @@ h1{
         flex-direction: column;
         gap: 20px;
         height: 50vh;
-        box-shadow: 5px 5px 15px rgb(161, 178, 204);
+        border-bottom: solid 2px nth($colors,2);
+        border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+        border-image-slice: 1 ;
 
         .datosContacto{
     
@@ -36,7 +38,7 @@ h1{
                 div
                 {
                     iframe{
-                        width: auto;
+                        width: 20vw;
                         height: auto;
                     }
     
