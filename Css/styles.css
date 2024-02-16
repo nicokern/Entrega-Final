@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Utilidades*/
 @import url(/SCSS/html/_home.scss);
 * {
@@ -548,6 +549,73 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 663px) {
+  /* Home */
+  header {
+    background-color: blue;
+  }
+  #Hero div h1 {
+    font-size: 2em;
+  }
+  #Hero .portada img {
+    display: none;
+  }
+  .BotoneraCategorias {
+    display: none;
+  }
+  .Testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .NAVEGACIÓN ul {
+    background-color: tomato;
+  }
+  /* Contacto */
+  .tituloSimple {
+    text-align: center;
+    margin-left: 100px;
+  }
+  .contactoGrilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Blog */
+  .entradasAntiguas {
+    display: flex;
+    flex-direction: column;
+  }
+  .entradaPrincipal {
+    display: flex;
+    flex-direction: column;
+  }
+  .entradaPrincipal p {
+    order: 3;
+  }
+  .entradaPrincipal img {
+    order: 2;
+  }
+  /* Nuestros Servicios */
+  .ListadoServicios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjetaServicio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 664px) and (max-width: 1024px) {
+  header {
+    background-color: red;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

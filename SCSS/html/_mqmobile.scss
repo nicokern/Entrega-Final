@@ -1,6 +1,27 @@
-@media ((max-width: 600px)) {
+
+@media only screen and (max-width: 663px)  {
 
  /* Home */
+    
+    header{
+        background-color: blue;
+
+    }
+
+    #Hero{
+        div{
+            h1{
+                font-size: 2em;
+            }
+        }
+        .portada{
+        img{
+            display: none;
+            
+        }
+    }
+    }
+
     .BotoneraCategorias{
         display: none;
      }
