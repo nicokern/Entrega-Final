@@ -193,37 +193,40 @@ header{
     flex-direction: column;
     margin: 10px;
     border-radius: 32px;    
+            #BotonesCategorias
+                        {
+                            background-color: #ffffff;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            gap: auto;
+                            border-radius: 100px;
+
+                                #botonCategoria{
+                                    
+                                    border-radius: 32px;
+                                    
+                                    :hover{
+                                        animation: agrandar_boton;
+                                        animation-duration: 3s;
+                                    
+                                    }
+                                    
+                                    }
+    
+
+                        }
     
 }
 
-#BotonesCategorias
-{
-background-color: #ffffff;
-padding: 10px;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-gap: auto;
-border-radius: 100px;
 
-}
 
 @keyframes agrandar_boton{
 
     0% {transform: scale(1);}
     50%{transform: scale(1.25);}
     100%{transform: scale(1.5);}
-}
-#botonCategoria{
-    
-border-radius: 32px;
-
-:hover{
-    animation: agrandar_boton;
-    animation-duration: 3s;
-
-}
-
 }
 
 /*Testimonios*/
