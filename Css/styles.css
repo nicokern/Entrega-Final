@@ -170,7 +170,7 @@ header div nav div div ul li .hover-color:hover {
 }
 .BotoneraCategorias #BotonesCategorias #botonCategoria :hover {
   animation: agrandar_boton;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes agrandar_boton {
@@ -513,6 +513,17 @@ h1 {
 @media only screen and (max-width: 663px) {
   /* Home */
   body {
+    background-color: #ffffff;
+  }
+  #Hero {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    height: 50vh;
+    margin: 0px 0px 0px 0px;
     background-color: #004D73;
     animation: cambioColor 15s infinite;
   }
@@ -532,16 +543,6 @@ h1 {
     100% {
       background-color: #3b668c;
     }
-  }
-  #Hero {
-    display: flex;
-    background-color: transparent;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 10px 10px 10px;
-    height: auto;
-    margin: 50px 0px 100px 0px;
   }
   #Hero .portada {
     width: 0%;
@@ -612,7 +613,9 @@ h1 {
     padding: 10px 10px 10px 0px;
     flex-direction: column;
     margin: 0px 0px 0px 0px;
-    background: #004D73;
+    background: #ffffff;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
   .TestimoniosCuerpo h2 {
     display: none;
@@ -625,16 +628,26 @@ h1 {
   .Testimonios {
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
     height: 35vh;
     gap: 0px;
+    animation: cambioOrden 10s infinite;
   }
-  @keyframes cambioOrden {}
-  .Testimonio {
+  @keyframes cambioOrden {
+    0% {
+      order: 1;
+    }
+    50% {
+      order: 2;
+    }
+    100% {
+      order: 3;
+    }
+  }
+  .Testimonios .Testimonio {
     align-items: center;
     text-align: center;
     background-color: #ffffff;
-    border: 1px solid #004D73;
+    border: 0px solid #004D73;
     border-image-slice: 1;
     border-radius: 0px;
     margin: 0px;
@@ -642,13 +655,15 @@ h1 {
     padding: 2vw;
     width: 100vw;
     height: 35vh;
-    animation: cambiarOrden 10s infinite;
   }
-  .Testimonio p {
+  .Testimonios .Testimonio h3 {
+    display: none;
+  }
+  .Testimonios .Testimonio p {
     color: #004D73;
     align-items: center;
   }
-  .Testimonio .img-testimonio {
+  .Testimonios .Testimonio .img-testimonio {
     width: auto;
     height: auto;
   }
