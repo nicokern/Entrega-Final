@@ -7,7 +7,6 @@
 
     }
 
- 
 
 #Hero {
    
@@ -16,9 +15,12 @@
     align-items: center;
     justify-content: center;
     padding: 10px 10px 10px 10px;
-    background: nth($colors,3);
+    background-color: transparent;
     height: auto;
     margin: 50px 0px 100px 0px;
+    background-image: url(/Img/fondoHero.png);
+    background-size: 200%;
+    background-position: center;
 
   .portada{
     width: 0%;
@@ -204,57 +206,124 @@ footer{
  }
 
 
-/* Contacto */
-
-.tituloSimple{
-    text-align: center;
-    margin-left: 100px; 
-}
-
-.contactoGrilla{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center
-
-}
 /* Blog */
 
-.entradasAntiguas{
-    
+.blogEntradas{
+
     display: flex;
-    flex-direction:column ;
-
-}
-
-.entradaPrincipal{
-   display: flex;
-   flex-direction: column;
-
-}
-
-.entradaPrincipal p{
-    order: 3;
-}
-
-.entradaPrincipal img{
-
-    order: 2;
-}
-
-/* Nuestros Servicios */
-
-.ListadoServicios {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-   }
+    gap: 10px;
+    width: auto;
+    height: auto;
 
-.tarjetaServicio{
-   flex-direction: row ;
-   flex-wrap: wrap;
-   
-}
+    .entradaPrincipal{
+        background-color: nth($colors,6);
+        width: auto;
+        height: 35vh;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom:2px solid ;
+        border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+        border-image-slice: 1;
+        box-shadow: 0px 0px 0px black;
+
+        p{
+            color: nth($colors,3);
+            opacity: 100%;
+            padding: 10px;
+            height: 100px;
+            text-align: left;
+            justify-content: left;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            padding: 10px;
+            border-top-right-radius: 64px;
+            border-bottom-left-radius: 64px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+        }
+
+        H2{
+            
+            height: auto;
+            padding: 10px;
+            font-size: 1.5em;
+            color: nth($colors,3);
+        
+        }
+        
+    }
+
+    .entradasAntiguas {
+
+        background-color: nth($colors,3);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        height: auto;
+    
+        
+        .entradaBlog{
+            display: grid;
+            grid-template-columns: 50% 50% ;
+            grid-template-rows: auto auto;
+            align-items: center;
+            gap: 0px;
+            margin:0px;
+            padding:10px;
+            height: auto;
+            box-shadow: 0px 0px 0px;
+            border-bottom:3px solid rgb(192, 255, 176);
+          
+            
+
+            h2, p{
+                grid-column: 2;
+                order:2;
+                align-items: center;
+                justify-content: left;
+                align-self: center;
+                width: auto;
+                margin:0px;
+                padding: 1vh;    
+            }
+            h2{
+                font-size: 1.25em;
+                height: auto;
+            }
+            p{
+                font-size: .90em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                height: 15vh;
+
+            }
+
+            .imgEntradaAntigua{
+                order:1;
+                grid-row: span 2;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                grid-column: 1;
+                padding: 4vw;
+            }
+            &:hover{
+                background-color: nth($colors,5)
+            }
+
+         }
+    }
+} 
+
 
 }
