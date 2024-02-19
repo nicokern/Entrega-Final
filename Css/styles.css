@@ -512,18 +512,36 @@ h1 {
 /* Responsive */
 @media only screen and (max-width: 663px) {
   /* Home */
+  body {
+    background-color: #004D73;
+    animation: cambioColor 15s infinite;
+  }
+  @keyframes cambioColor {
+    0% {
+      background-color: #004D73;
+    }
+    10% {
+      background-color: #3b668c;
+    }
+    50% {
+      background-color: #73b738;
+    }
+    75% {
+      background-color: #004D73;
+    }
+    100% {
+      background-color: #3b668c;
+    }
+  }
   #Hero {
     display: flex;
+    background-color: transparent;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px 10px 10px 10px;
-    background-color: transparent;
     height: auto;
     margin: 50px 0px 100px 0px;
-    background-image: url(/Img/fondoHero.png);
-    background-size: 200%;
-    background-position: center;
   }
   #Hero .portada {
     width: 0%;
@@ -541,6 +559,7 @@ h1 {
   }
   #Hero div h1 {
     font-size: 5em;
+    color: #ffffff;
     width: 600px;
     text-align: center;
     max-width: 70%;
@@ -549,11 +568,12 @@ h1 {
     width: 100%;
     text-align: center;
     max-width: 60%;
+    color: #ffffff;
   }
   .BotoneraCategorias {
-    gap: 8vh;
-    margin: 8vh 0px 8vh 0px;
-    padding: 4vh 0px 8vh 0px;
+    gap: 2vh;
+    margin: 0vh 0px 0vh 0px;
+    padding: 2vh 0px 4vh 0px;
     background-color: #ffffff;
     border-radius: 0px;
     border-top: 4px solid black;
@@ -561,20 +581,26 @@ h1 {
     border-image: linear-gradient(to right, #73b738, #ffffff, #73b738, #ffffff, #73b738, #73b738);
     border-image-slice: 1;
   }
+  .BotoneraCategorias h2 {
+    color: #3b668c;
+  }
   .BotoneraCategorias #BotonesCategorias {
-    background-color: #ffffff;
+    background-color: transparent;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: start;
+    align-items: start;
+    gap: 10vw;
+    border-radius: 0px;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
   .BotoneraCategorias #BotonesCategorias #botonCategoria {
     padding: 12px;
-    background-color: #ffffff;
-    border: 2px solid black;
-    border-image: circle-gradient(to circle, #73b738, #ffffff, #73b738, #ffffff, #73b738, #73b738);
-    border-image-slice: 4;
+    border-radius: 32px;
+    border: 1px solid #73b738;
+    scroll-snap-align: start;
   }
   .BotoneraCategorias #BotonesCategorias #botonCategoria :hover {
     animation: agrandar_boton;
@@ -583,49 +609,46 @@ h1 {
   /*Testimonios*/
   .TestimoniosCuerpo {
     display: flex;
-    gap: 20px;
     padding: 10px 10px 10px 0px;
     flex-direction: column;
-    flex-wrap: wrap;
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(to top, #004D73, #ffffff);
-    border: 4px;
-    border-image: radial-gradient(circle, #ffffff, #73b738) 1;
-    border-image-slice: 1;
+    background: #004D73;
   }
   .TestimoniosCuerpo h2 {
-    color: #004D73;
+    display: none;
+    color: #ffffff;
+    font-size: 2.5em;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
   }
   .Testimonios {
     display: flex;
-    gap: 40px;
-    margin-left: 0px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 35vh;
+    gap: 0px;
   }
+  @keyframes cambioOrden {}
   .Testimonio {
     align-items: center;
     text-align: center;
-    padding: 20px;
     background-color: #ffffff;
+    border: 1px solid #004D73;
     border-image-slice: 1;
-    border-radius: 32px;
-    margin: 20px;
-    padding: 10px;
-    width: 55vw;
-    height: 50vh;
-  }
-  .Testimonio h3 {
-    font-size: 1.5em;
-    color: #004D73;
-    margin: 10px 10px 10px 10px;
+    border-radius: 0px;
+    margin: 0px;
+    gap: 0px;
+    padding: 2vw;
+    width: 100vw;
+    height: 35vh;
+    animation: cambiarOrden 10s infinite;
   }
   .Testimonio p {
     color: #004D73;
     align-items: center;
   }
-  .img-testimonio {
+  .Testimonio .img-testimonio {
     width: auto;
     height: auto;
   }
@@ -747,8 +770,70 @@ h1 {
   }
 }
 @media only screen and (min-width: 664px) and (max-width: 1024px) {
-  header {
-    background-color: red;
+  body {
+    background-color: #004D73;
+    animation: cambioColor 15s infinite;
+  }
+  @keyframes cambioColor {
+    0% {
+      background-color: #004D73;
+    }
+    10% {
+      background-color: #3b668c;
+    }
+    50% {
+      background-color: #73b738;
+    }
+    75% {
+      background-color: #004D73;
+    }
+    100% {
+      background-color: #3b668c;
+    }
+  }
+  #Hero {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    margin: 50px 0px 100px 0px;
+  }
+  #Hero .portada {
+    width: 0%;
+  }
+  #Hero .portada img {
+    display: none;
+  }
+  #Hero div {
+    margin-left: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #Hero div h1 {
+    font-size: 5em;
+    color: #ffffff;
+    width: 600px;
+    text-align: center;
+    max-width: 70%;
+  }
+  #Hero div p {
+    width: 100%;
+    text-align: center;
+    max-width: 60%;
+    color: #ffffff;
+  }
+  .BotoneraCategorias {
+    border-radius: 0px;
+    margin: 0px;
+    border-top: 4px solid black;
+    border-image: linear-gradient(to right, #73b738, #ffffff, #73b738, #ffffff, #73b738, #73b738);
+    border-image-slice: 1;
   }
 }
 
