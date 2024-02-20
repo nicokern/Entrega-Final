@@ -21,7 +21,6 @@
             border-bottom: 4px solid black;
             border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
             border-image-slice: 1;
-            box-shadow: 10px 10px 10px black;
 
             p{
                 color: nth($colors,3);
@@ -52,8 +51,9 @@
         .entradasAntiguas {
     
             background-color: nth($colors,3);
-            display: grid;
-            grid-template-columns: auto auto auto;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             padding: 10px;
             justify-content: center;
             align-items: center;
@@ -66,11 +66,14 @@
                 flex-direction: column;
                 text-align:start;
                 height: 55vh;
-                padding: 5px;
+                width: 30vw;
+                border-bottom: 1px solid;
+                border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
+                border-image-slice: 1;
+                padding: 2vh;
                 gap: 5px;
                 margin: 10px;
-                box-shadow: 10px 10px 10px;
-                
+   
 
                 h2{
                     text-align: center;
@@ -90,12 +93,13 @@
                 .imgEntradaAntigua{
 
                     height: 40% ;
+                    border-radius: 32px 16px;
                     align-items: center;
                     object-fit: cover ;
             
                 }
                 &:hover{
-                    background-color: nth($colors,5)
+                    background-color: nth($colors,7)
                 }
 
              }

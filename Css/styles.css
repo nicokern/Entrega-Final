@@ -412,7 +412,6 @@ h1 {
   border-bottom: 4px solid black;
   border-image: linear-gradient(to right, #73b738, #ffffff, #73b738, #ffffff, #73b738, #73b738);
   border-image-slice: 1;
-  box-shadow: 10px 10px 10px black;
 }
 .blogEntradas .entradaPrincipal p {
   color: #ffffff;
@@ -436,8 +435,9 @@ h1 {
 }
 .blogEntradas .entradasAntiguas {
   background-color: #ffffff;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -448,10 +448,13 @@ h1 {
   flex-direction: column;
   text-align: start;
   height: 55vh;
-  padding: 5px;
+  width: 30vw;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #73b738, #ffffff, #73b738, #ffffff, #73b738, #73b738);
+  border-image-slice: 1;
+  padding: 2vh;
   gap: 5px;
   margin: 10px;
-  box-shadow: 10px 10px 10px;
 }
 .blogEntradas .entradasAntiguas .entradaBlog h2 {
   text-align: center;
@@ -466,11 +469,12 @@ h1 {
 }
 .blogEntradas .entradasAntiguas .entradaBlog .imgEntradaAntigua {
   height: 40%;
+  border-radius: 32px 16px;
   align-items: center;
   object-fit: cover;
 }
 .blogEntradas .entradasAntiguas .entradaBlog:hover {
-  background-color: #c5c5c5;
+  background-color: #98bb7a;
 }
 
 /* Nuestros Servicios*/
@@ -756,18 +760,12 @@ h1 {
     font-size: 1.5em;
     color: #ffffff;
   }
-  .blogEntradas .entradasAntiguas {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    height: auto;
-  }
   .blogEntradas .entradasAntiguas .entradaBlog {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     align-items: center;
+    width: 100vw;
     gap: 0px;
     margin: 0px;
     padding: 10px;
@@ -797,6 +795,7 @@ h1 {
   }
   .blogEntradas .entradasAntiguas .entradaBlog .imgEntradaAntigua {
     order: 1;
+    border-radius: 32px 16px;
     grid-row: span 2;
     width: 100%;
     height: auto;
@@ -1024,6 +1023,59 @@ h1 {
     margin-left: 8vw;
     color: #ffffff;
     width: 45vw;
+  }
+  .blogEntradas .entradasAntiguas {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    height: auto;
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 0px;
+    width: 100vw;
+    margin: 0px;
+    padding: 10px;
+    height: auto;
+    box-shadow: 0px 0px 0px;
+    border-bottom: 3px solid rgb(192, 255, 176);
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog h2, .blogEntradas .entradasAntiguas .entradaBlog p {
+    grid-column: 2;
+    order: 2;
+    align-items: center;
+    justify-content: left;
+    align-self: center;
+    width: auto;
+    margin: 0px;
+    padding: 1vh;
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog h2 {
+    font-size: 1.25em;
+    height: auto;
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog p {
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 15vh;
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog .imgEntradaAntigua {
+    order: 1;
+    grid-row: span 2;
+    border-radius: 32px 16px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    grid-column: 1;
+    padding: 4vw;
+  }
+  .blogEntradas .entradasAntiguas .entradaBlog:hover {
+    background-color: #c5c5c5;
   }
 }
 
