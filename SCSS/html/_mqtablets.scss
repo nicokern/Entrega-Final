@@ -130,4 +130,59 @@ body{
 
 }
 
+.blogEntradas{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+    .entradaPrincipal{
+        background-color: nth($colors,6);
+        width: auto;
+        height: 35vh;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 4px solid black;
+        border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
+        border-image-slice: 1;
+        box-shadow: 10px 10px 10px black;
+
+       
+        img {
+            width: 55%;
+            max-height: 32vh;
+            margin-right: 6vh;
+            padding: 10px;
+    
+
+        }
+
+        p{
+            color: nth($colors,3);
+            opacity: 70%;
+            margin-left: 8vw;
+            padding: 12px;
+            
+        }
+        H2{
+            font-size: 1.5em;
+            text-align: left;
+            margin-left: 8vw;
+            color: nth($colors,3);
+            width: 45vw;
+           
+        
+        }
+        
+    }
+
+    
+}
+
 }

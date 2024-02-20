@@ -20,14 +20,16 @@ h2{
 }
 
 h3{
-    @include font ("rethink sans", "initial", 1em,rgb(255, 255, 255))
+    @include font ("rethink sans", "initial", 1em,rgb(255, 255, 255));
+    text-align: justify;
+    text-align-last: center;
 }
 
 
 main{
     font: 1em;
-    background-color:nth ($colors, 1);
-    color: aliceblue
+    background-color:nth ($colors, 3);
+    
     
 }
 
@@ -113,6 +115,7 @@ header{
     background: nth($colors,3);
     height: auto;
     margin: 10px 0px 100px 0px;
+    
 
   .portada{
     width: 40%;
@@ -189,13 +192,16 @@ header{
 {
     position: relative;
     background-color: nth($colors, 3);
+    border-top: 4px solid black;
+    border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
+    border-image-slice: 1;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    border-radius: 32px;    
+    padding-top:3vh ;
+    margin: 10px 0px 10px 0px;
             #BotonesCategorias
                         {
-                            background-color: #ffffff;
+                            background-color: transparent;
                             padding: 10px;
                             display: flex;
                             flex-direction: row;
@@ -239,14 +245,15 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(to top, nth($colors,1), nth($colors,3));
-    border: 4px;
+    /*background: linear-gradient(to top, nth($colors,1), nth($colors,3));
+    */
+    background-color: nth($colors,1);
     border-image: radial-gradient(circle, nth($colors, 3), nth($colors, 2)) 1;
     border-image-slice: 1;
 
 
     h2{
-        color: nth($colors,1);
+        color: nth($colors,3);
     }
    
  }
@@ -274,28 +281,33 @@ header{
     text-align: center;
     padding: 10px;
     background-color:nth($colors,3);
-    border-radius: 32px;
+    border-radius: 8px 32px 8px 32px;
     margin: 20px;
     padding: 10px;
     height: 450px;
 
         h3{
-            font-size: 1.5em;
+            font-size: 1em;
             color: nth($colors,1);
             margin: 10px 10px 10px 10px;
+            display: none;
         
         }
 
         p{
             color: nth($colors,1);
             align-items: center;
+            padding: 2vh;
         }
+
+        .img-testimonio{
+            @include sizes (auto,auto);
+            padding: 1vh;
+           
+         }
  }
 
-.img-testimonio{
-   @include sizes (auto,auto)
-  
-}
+
 
 .redes {
     height: 50px;
@@ -311,13 +323,37 @@ header{
 
 footer{
 
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
     text-align: center;
     width: 100%;
+    height: auto;
+    padding:12px ;
+    gap: 4vh;
     background-color: nth($colors,1);
 
     p{
-        color:nth($colors,3);
+        color: #ffffff;
     }
+
+    .redesFooter{
+
+        height: 6vh;
+
+        h3{
+            color:nth($colors,3);
+        }
+
+        img{
+            height: 6vh;
+            object-fit: cover;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+   
 
 
 }

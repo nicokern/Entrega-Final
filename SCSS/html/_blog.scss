@@ -11,15 +11,15 @@
         .entradaPrincipal{
             background-color: nth($colors,6);
             width: auto;
-            height: 40vh;
+            height: 45vh;
             align-items: center;
             display: flex;
             flex-direction: row;
             padding: 20px;
             justify-content: space-around;
             align-items: center;
-            border-bottom:3px solid ;
-            border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+            border-bottom: 4px solid black;
+            border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
             border-image-slice: 1;
             box-shadow: 10px 10px 10px black;
 
@@ -30,7 +30,8 @@
             }
             img {
                 width: 50%;
-                height: auto;
+                max-height: 35vh;
+                object-fit: contain;
                 padding: 10px;
                 border-top-right-radius: 64px;
                 border-bottom-left-radius: 64px;
@@ -40,8 +41,9 @@
             }
 
             H2{
-                text-align:center;
+                text-align: center;
                 color: nth($colors,3);
+                padding: 10px;
             
             }
             

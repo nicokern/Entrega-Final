@@ -20,8 +20,11 @@
      
         .LogoNombre{
             
-            width: 20%;
+            
+            width: 10%;
             align-items: center;
+            object-fit: cover;
+            overflow: hidden;
             
         }
 
@@ -133,13 +136,17 @@
     background-color: nth($colors,3);
     border-radius: 0px;
     border-top: 4px solid black;
-    border-bottom: 4px solid black;
     border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
     border-image-slice: 1;
+
    
 
     h2{
         color: nth($colors,6);
+        font-size: 1.5em;
+        opacity: 80%;
+        align-items: left;
+        text-align: left;
     }
 
     #BotonesCategorias
@@ -161,14 +168,12 @@
                                  
             padding: 12px;
             border-radius: 32px;
-            border: 1px solid nth($colors,2);
+            border: 1px solid nth($colors,5);
             scroll-snap-align: start;
            
             
             :hover{
-                animation: agrandar_boton;
-                animation-duration: 3s;
-            
+                animation: none;
             }
             
             }
@@ -178,82 +183,6 @@
 
 
 
-/*Testimonios*/
-/*
-.TestimoniosCuerpo {
-    
-    display: flex;
-    padding: 10px 10px 10px 0px;
-    flex-direction: column;
-    margin: 0px 0px 0px 0px;
-    background: nth($colors,3);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
-    
-
-
-    h2{
-        display: none;
-        color: nth($colors,3);
-        font-size: 2.5em;
-        justify-content: center;
-        align-self: center;
-        text-align: center;
-    }
-   
- }
-
-
-.Testimonios {
-    
-   display: flex ;
-   flex-direction: row;
-   height: 35vh;
-   gap: 0px;
-   animation: cambioOrden 10s infinite;
-
-
-@keyframes cambioOrden {
-
-    0%{order:1}
-    50%{order:2}
-    100%{order:3}
-   
-    }
-
-    .Testimonio{
-        
-        align-items: center;
-        text-align: center;
-        background-color:nth($colors,3);
-        border: 0px solid nth($colors,1);
-        border-image-slice: 1;
-        border-radius: 0px;
-        margin: 0px;
-        gap: 0px;
-        padding: 2vw;
-        width: 100vw;
-        height: 35vh;
-
-
-            h3{
-            display: none;
-            }
-
-            p{
-                color: nth($colors,1);
-                align-items: center;
-            }
-
-            .img-testimonio{
-                @include sizes (auto,auto)
-            
-            }
-    }
-
-}
-*/
 
 /*Testimonio para mobile y tablet carrusel*/
 
@@ -312,16 +241,7 @@
 }
 
 
-footer{
 
-    text-align: center;
-    width: 100%;
-    background-color: nth($colors,1);
-
-    p{
-        color:nth($colors,3);
-    }
- }
 
 
 /* Blog */
@@ -346,7 +266,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         border-bottom:2px solid ;
-        border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+        border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
         border-image-slice: 1;
         box-shadow: 0px 0px 0px black;
 
@@ -443,5 +363,136 @@ footer{
     }
 } 
 
+.contactoGrilla{
+
+    display: grid;
+    grid-template-rows: 35% 65%;
+    margin:5vh 15vw 30vh 15vw;
+    gap: 25vh;
+    height: 90vh;
+    margin-bottom:400px ;
+    padding: 0px;
+    justify-content: space-around;
+
+   
+    .datosContactoppal{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 50vh;
+        border-bottom: solid 2px nth($colors,2);
+        border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+        border-image-slice: 1 ;
+
+        .datosContacto{
+    
+            display: flex;
+            flex-direction: row;
+            gap:4vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+           
+    
+                div
+                {
+                    iframe{
+                        width: 20vw;
+                        height: auto;
+                    }
+    
+                    img {
+    
+                    width: 35vw;
+                    height: auto;
+    
+                            }
+    
+                }
+        
+        }
+    
+
+    
+    }
+
+    
+}
+
+.contactoGrilla{
+
+   
+    .datosContactoppal{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 40vh;
+        border-bottom: solid 2px nth($colors,2);
+        border-image: linear-gradient(to right, nth($colors,2), rgb(152, 254, 152), rgb(72, 202, 72) , nth($colors,2));
+        border-image-slice: 1 ;
+
+        .datosContacto{
+    
+            display: flex;
+            flex-direction: row;
+            gap:2vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+           
+    
+                div
+                {
+                    iframe{
+                        width: 25vw;
+                        height: auto;
+                    }
+    
+                    img {
+    
+                    width: 35vw;
+                    height: auto;
+    
+                            }
+    
+                }
+        
+        }
+    
+
+    
+    }
+
+    
+    .formularioContacto{
+        padding-right: 0px;
+        text-align: center;
+        background-color: nth($colors,6);
+        border-radius: 64px;
+        height: 600px;
+        padding: 0px 40px 10px 40px;
+
+        label{
+            color: nth($colors,3);
+            opacity: 70%;
+            text-align: left;
+        
+        }
+        
+        h2{
+            margin-top:2vh;
+            color: nth($colors,3);
+        }
+
+        p{
+            color: nth($colors,3);
+        }
+        
+    }
+    
+
+}
 
 }
