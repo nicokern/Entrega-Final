@@ -251,6 +251,9 @@ header{
    
  }
 
+ .testimoniosCuerpoMobile{ 
+    display: none;
+ }
 
 .Testimonios {
     
@@ -315,4 +318,7 @@ footer{
     p{
         color:nth($colors,3);
     }
- }
+
+
+}
+

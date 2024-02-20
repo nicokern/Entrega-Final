@@ -6,6 +6,19 @@ header{
 
 body{
 
+   
+}
+
+#Hero {
+   
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    height: 50vh;
+    margin: 0px 0px 0px 0px;
     background-color: nth($colors,1);
     animation: cambioColor 15s infinite;
 
@@ -18,18 +31,6 @@ body{
 
 
     }  
-}
-
-#Hero {
-   
-    display: flex;
-    background-color: transparent;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 10px 10px 10px;
-    height: auto;
-    margin: 50px 0px 100px 0px;
 
   .portada{
     width: 0%;
@@ -79,11 +80,54 @@ body{
 .BotoneraCategorias{
     border-radius: 0px;
     margin: 0px;
+    padding: 20px;
     border-top: 4px solid black;
-   
     border-image: linear-gradient(to right, nth($colors, 2), nth($colors, 3),nth($colors, 2),nth($colors, 3),nth($colors, 2),nth($colors, 2));
     border-image-slice: 1;
 }
 
+/*Testimonio para mobile y tablet carrusel*/
+
+.TestimoniosCuerpo{
+    display: none;
+}
+
+.testimoniosCuerpoMobile{
+    display: block;
+    height: 40vh;
+    padding: 10px ;
+    margin: 10px;
+
+    .testimoniosMobile {
+
+
+        .testimonioMobile {
+                        
+            gap: 200px;
+
+                        img{   
+                            padding: 10px;
+                            height: 20vh ;
+                            object-fit: contain;
+
+                        }
+
+                        p {
+                            margin:1vh;
+                            padding: 5vw ;
+                            justify-content: center;
+                            text-align: center;
+                            }
+
+                        h3 {
+                        font-size: 2em;
+                        background-color: red;
+                        display: none;
+                            }
+                }
+    }
+    
+
+}
 
 }

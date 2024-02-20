@@ -3,9 +3,54 @@
 
  /* Home */
     
-    header{
+ header{
+    background-color: nth($colors,3);
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 200;
+    
+    div{
+       width: 100%;
+       margin-left: 20px;
+     
+        .LogoNombre{
+            
+            width: 20%;
+            align-items: center;
+            
+        }
 
-    }
+        .navbarbotones{
+
+            display: flex;
+            width: 70%;
+            justify-content: flex-end;
+
+            
+
+        }
+
+        nav{
+            div{
+                div{
+                    ul{
+                        li{
+                            .hover-color:hover {
+
+                                background-color: #dbebfa;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+} 
 
     body{
         background-color: #ffffff;
@@ -134,7 +179,7 @@
 
 
 /*Testimonios*/
-
+/*
 .TestimoniosCuerpo {
     
     display: flex;
@@ -206,6 +251,52 @@
             
             }
     }
+
+}
+*/
+
+/*Testimonio para mobile y tablet carrusel*/
+
+.TestimoniosCuerpo{
+    display: none;
+}
+
+.testimoniosCuerpoMobile{
+    display: block;
+    height: 40vh;
+    padding: 10px ;
+    margin: 0px;
+    background-color: nth($colors,3);
+
+    .testimoniosMobile {
+
+
+        .testimonioMobile {
+                        
+            gap: 200px;
+
+                        img{   
+                            padding: 10px;
+                            height: 20vh ;
+                            object-fit: contain;
+
+                        }
+
+                        p {
+                            margin:1vh;
+                            padding: 5vw ;
+                            justify-content: center;
+                            text-align: center;
+                            }
+
+                        h3 {
+                        font-size: 2em;
+                        background-color: red;
+                        display: none;
+                            }
+                }
+    }
+    
 
 }
 
